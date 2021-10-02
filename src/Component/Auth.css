@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+
+.signup,.signin,.contact{
+ display:flex;
+ justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width:100%;
+}
+.contact{
+  max-width:30rem;
+  min-width:10rem;
+}
+.main-container{
+ box-shadow:0 0 10px #42445A;
+ border-radius:0.5rem;
+ padding:0.5rem;
+ position:relative;
+}
+.Social{
+ margin:0 0.5rem;
+ display:flex;
+ justify-content: center;
+}
+.fs-ic{
+  color:#c7d2d5;
+  font-size:5rem;
+}
+.sc-ic{
+  color:#c7d2d5;
+  font-size:2rem;
+}
+.line-container{
+  color:#c2cccf;
+ width:100%;
+ position:relative;
+}
+.fw{
+ position:absolute;
+ top:50%;
+ left:50%;
+ border-radius:50%;
+ transform:translate(-50%,-50%);
+}
+
+.ic{
+ display:flex;
+ align-items: center;
+ justify-content: center;
+ 
+ text-decoration:none;
+ border-radius:50%;
+ margin:0.5rem;
+}
+.sc-ic:hover{
+ color:#ffc500;
+ box-shadow:-2px -2px 10px #42445A,
+           2px 2px 10px #999BB5,
+           2px 2px 10px #42445A,
+           -2px -2px 10px #999BB5;
+  border-radius:50%;         
+}
+
+button{
+ transition: transform 80ms ease-in;
+}
+button:active{
+ transform:scale(0.95);
+}
+button:focus{
+ outline:none;
+}
+button.ghost{
+ background:transparent;
+}
+.overlay{
+ display:none;
+ background: #FF416C;
+ background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
+ background: linear-gradient(to right, #FF4B2B, #FF416C);
+ width:50%;
+ height:100%;
+ overflow:hidden;
+ position:absolute;
+ left:0;
+ top:0;
+ padding:3rem 2rem;
+ border-radius:0.6rem;
+ align-items:center;
+ justify-content:center;
+ text-align:center;
+ flex-direction:column;
+ transform:translate(0);
+ transition:transform 0.4s ease-in;
+}
+
+.main-container .overlay-left{
+	opacity: 1;
+	z-index: 5;
+	display:flex;
+	animation: show 0.6s;
+}
+.main-container.right-active .overlay-left{
+ transform:translateX(100%);
+}
+.main-container.right-active .overlay-right{
+ opacity: 1;
+	z-index: 5;
+	display:flex;
+	animation: show 0.6s;
+}
+.main-container .overlay-right{
+transform: translateX(100%);
+}
+.t-6{
+ font-size:1.5rem;
+ font-style:bold;
+ line-height:2rem ;
+ font-family: 'Montserrat', sans-serif;
+}
+@keyframes show {
+	0%, 49.99% {
+		opacity: 0;
+		z-index: 1;
+	}
+	
+	50%, 100% {
+		opacity: 1;
+		z-index: 5;
+	}
+}
+/*@media (max-width:768px){
+ .overlay{
+  width:100%;
+  height:50%;
+ }
+.main-container.right-active .overlay-left{
+ transform:translateY(100%);
+ 
+}
+.main-container .overlay-right{
+transform: translateY(100%);
+}
+}*/
