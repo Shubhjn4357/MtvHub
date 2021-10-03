@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/MtvHub/static/css/main.71d39adb.chunk.css",
-    "main.js": "/MtvHub/static/js/main.3a209c62.chunk.js",
-    "main.js.map": "/MtvHub/static/js/main.3a209c62.chunk.js.map",
+    "main.js": "/MtvHub/static/js/main.0322f126.chunk.js",
+    "main.js.map": "/MtvHub/static/js/main.0322f126.chunk.js.map",
     "runtime-main.js": "/MtvHub/static/js/runtime-main.eef05a1d.js",
     "runtime-main.js.map": "/MtvHub/static/js/runtime-main.eef05a1d.js.map",
     "static/css/2.b52d555c.chunk.css": "/MtvHub/static/css/2.b52d555c.chunk.css",
@@ -19,6 +19,6 @@
     "static/css/2.b52d555c.chunk.css",
     "static/js/2.91545c53.chunk.js",
     "static/css/main.71d39adb.chunk.css",
-    "static/js/main.3a209c62.chunk.js"
+    "static/js/main.0322f126.chunk.js"
   ]
 }
