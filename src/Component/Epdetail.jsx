@@ -9,7 +9,7 @@ const Epdetail=()=>{
   const Data=useCustomFetch(`https://api.themoviedb.org/3/tv/${id}/season/${s}/episode/${ep}?api_key=b8b691424543ca1b78129c0328e1cc4f&language=en-US`,{})
   const path=Data.response?`https://image.tmdb.org/t/p/original/${Data.response.still_path}`:null;
   const Pdetail=(e)=>{
-    history.push(`/person/${e.id}`)
+    history.push(`/MtvHub/person/${e.id}`)
   }
   return(
   <>

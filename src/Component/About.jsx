@@ -9,7 +9,7 @@ const About=()=>{
    <strong className="text-bolder fs-1 text-italic text-light">About Us</strong>
   <p className="text-bold fs-3 text-light">Meet Our terms</p>
   <p className="lh-lg fs-5 text-muted">We are all very different. We were born in different cities, at different times, we love different music, food, movies. But we have something that unites us all. It is our company. We are its heart. We are not just a team, we are a family.   </p>
-  <button className="btn btn-light rounded-pill"><NavLink to="/contact" className="text-decoration-none text-danger">Contact Us</NavLink></button>
+  <button className="btn btn-light rounded-pill"><NavLink to="/MtvHub/contact" className="text-decoration-none text-danger">Contact Us</NavLink></button>
   </div>
  <div className="col-12">
   <div className="icons">

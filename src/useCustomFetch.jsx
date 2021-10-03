@@ -1,34 +1,35 @@
-import {useEffect,useState} from "react";
+import {useEffect,useReducer} from "react";
+import {Reducer} from "./Reducer";
 const UseCustomFetch=(url,options)=>{
-  const [response, setResponse] = useState(null);
+  //const [response, setResponse] = useState(null);
   //const [error, setError] = useState(null);
-  const [isLoading, setIsLoading] =useState(false);
+  //const [isLoading, setIsLoading] =useState(false);
   
-  //const [response,DisRes]=useReducer(Reducer,null)
-  //const [isLoading, setIsLoading]=useReducer(Reducer,false)
+  const [response,DisRes]=useReducer(Reducer,null)
+  const [isLoading, setIsLoading]=useReducer(Reducer,false)
   const repeat=options.repeat?options.repeat:null;
-  console.log(repeat)
   useEffect(()=>{
     const fetchData = async () => {
-      setIsLoading(true)
+      
+      setIsLoading({type:"User",payload:true})
       try {
-        const res = await fetch(url, (options.methods?options.methods:null));
+        const res = await fetch(url,options.method);
       
         const json = await res.json();
-    
-        setResponse(json)
-        setIsLoading(false)
+        DisRes({type:"User",payload:json})
+        //setResponse(json)
+        setIsLoading({type:"User",payload:false})
       } catch (error) {
-        setResponse(error)
-        setIsLoading(false)
+        DisRes({type:"User",payload:error})
+        setIsLoading({type:"User",payload:false})
       }
     }
     fetchData();
-    return () => {
-      setResponse(null)
-      setIsLoading(false)
+   return () => {
+      DisRes({type:"User",payload:null})
+      setIsLoading({type:"User",payload:false})
     }
-  },[options.methods,url]);
+  },[repeat]);
   return { response, isLoading };
 };
 export default UseCustomFetch;

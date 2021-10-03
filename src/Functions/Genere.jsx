@@ -22,7 +22,7 @@ const Genere=(props)=>{
       ]
   }
   const Genre=(e)=>{
-    history.push(`/genre/${e.id}/${e.name}/movie`)
+    history.push(`/MtvHub/genre/${e.id}/${e.name}/movie`)
   }
   return(
     <>

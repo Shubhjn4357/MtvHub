@@ -55,7 +55,7 @@ return(
  <p><strong className=" text-light text-italic text-bold text-glow mb-2">
  Here You Can find All Movies,Tv Show & celebrity Details so Lets Get Started
  </strong></p>
- <NavLink to={State?"/watch":"/auth"} className="btn btn-dark btn-pill m-2">{State?"Lets Watch":"Get Started"}</NavLink>
+ <NavLink to={State?"/MtvHub/watch":"/MtvHub/auth"} className="btn btn-dark btn-pill m-2">{State?"Lets Watch":"Get Started"}</NavLink>
 
  </div>
  </div>

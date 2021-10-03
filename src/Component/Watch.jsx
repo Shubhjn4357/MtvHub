@@ -19,11 +19,11 @@ const Watch=()=>{
   const MovieDiscover=useCustomFetch(`${Base_Link}discover/movie${api_Key}&language=en-US&sort_by=popularity.desc&include_adult=true&include_video=true&page=2`,{})
   const history=useHistory()
   const MovieId=(e)=>{
-    history.push(`/movie/`+e.id)
+    history.push(`/MtvHub/movie/`+e.id)
     return Dispatch({type:"ITEM",payload:e})
   }
   const TvId=(e)=>{
-    history.push(`/tv/`+e.id)
+    history.push(`/MtvHub/tv/`+e.id)
     return Dispatch({type:"ITEM",payload:e})
   }
   return(

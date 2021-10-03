@@ -10,7 +10,7 @@ const Navout=()=>{
   return(<>
   <nav className="navbar navbar-expand-md navbar-dark bg-dark">
   <div className="container-fluid">
-    <NavLink className="navbar-brand" to="/">MTVHub</NavLink>
+    <NavLink className="navbar-brand" to="/MtvHub/">MTVHub</NavLink>
     <div className="rounded-circle navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="">
       <UseAnimation
@@ -27,7 +27,7 @@ const Navout=()=>{
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav ms-auto my-auto mb-2 mb-lg-0 order-md-3 order-2">
         <li className="nav-item">
-          <NavLink exact activeClassName="ActiveNav" className="nav-link" to="/Auth">SignUp/SignIn</NavLink>
+          <NavLink exact activeClassName="ActiveNav" className="nav-link" to="/MtvHub/Auth">SignUp/SignIn</NavLink>
         </li>
       </ul>
       

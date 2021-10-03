@@ -4,7 +4,7 @@ const Tab=(props)=>{
   const poster=props.item.backdrop_path?props.item.backdrop_path:props.item.profile_path;
   const path=`https://image.tmdb.org/t/p/original/${poster}`;
   return(
-  <NavLink className="text-decoration-none" to={`/${props.item.media_type?props.item.media_type:props.type}/${props.item.id}`}>
+  <NavLink className="text-decoration-none" to={`/MtvHub/${props.item.media_type?props.item.media_type:props.type}/${props.item.id}`}>
   <div className="container bg-dark card rounded Tab">
   <div className="row card-body">
    <div className="col-12 col-md-6 p-0">

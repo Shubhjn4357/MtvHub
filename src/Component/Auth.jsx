@@ -34,7 +34,7 @@ signInWithPopup(auth, provider)
     // ...
     console.log(user,secret,token, credential)
     setLoading(false)
-    history.push("/")
+    history.push("/MtvHub/")
     window.alert("welcome")
   }).catch((error) => {
     // Handle Errors here.
@@ -70,7 +70,7 @@ signInWithPopup(auth, provider)
     // ...
     console.log(user,token, credential)
     setLoading(false)
-    history.push("/")
+    history.push("/MtvHub/")
     window.alert("welcome ")
   }).catch((error) => {
     // Handle Errors here.
@@ -108,7 +108,7 @@ signInWithPopup(auth, provider)
     // ...
     console.log(user,token, credential)
     setLoading(false)
-    history.push("/")
+    history.push("/MtvHub/")
     window.alert("welcome")
   }).catch((error) => {
     // Handle Errors here.
@@ -141,7 +141,7 @@ signInWithEmailAndPassword(auth,state.email, state.password)
     // ...
     console.log(user)
     setLoading(false)
-    history.push("/")
+    history.push("/MtvHub/")
     window.alert("welcome Back")
   })
   .catch((error) => {
@@ -178,7 +178,7 @@ createUserWithEmailAndPassword(auth,state.email, state.password)
 CreateUser();
     console.log(user)
     setLoading(false)
-    history.push("/")
+    history.push("/MtvHub/")
     window.alert("ThankYou for Joining Us")
   })
   .catch((error) => {
@@ -265,7 +265,7 @@ CreateUser();
   <input name="password" state="inpv" onChange={HandleChange}  type="password" className="form-control w-100" id="floatingPassword" placeholder="Password" value={state.password} required/>
   <label htmlFor="floatingPassword">Password <span className="text-danger">*</span></label>
 </div>
-<div className="w-100"><span><NavLink to="/passreset" className="text-decoration-none text-danger my-2">Forget Your Password?</NavLink></span></div>
+<div className="w-100"><span><NavLink to="/MtvHub/passreset" className="text-decoration-none text-danger my-2">Forget Your Password?</NavLink></span></div>
 <div className=" line-container my-2"><div className="fw bg-dark text-light p-2">OR</div><hr/></div>
 <div className="w-100" onClick={Toggler}><span><NavLink to="#" className="text-decoration-none text-danger my-2">Or Create Account</NavLink></span></div>
 <button onClick={signin} type="submit" className=" btn btn-danger rounded-pill my-1 p-2 px-4">Sign In</button>
