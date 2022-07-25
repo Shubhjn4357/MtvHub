@@ -17,20 +17,20 @@ const Routing=()=>{
   return(
     <>
     <Switch/>
-    <Route exact path="/MtvHub/" component={Home}/>
-    <Route exact path="/MtvHub/movie/:id" component={Movie}/>
-    <Route exact path="/MtvHub/tv/:id" component={Tv}/>
-    <Route exact path="/MtvHub/about" component={About}/>
-    <Route exact path="/MtvHub/contact" component={Contact}/>
-    <Route exact path="/MtvHub/watch" component={Watch}/>
-    <Route exact path="/MtvHub/auth" component={Auth}/>
-    <Route exact path="/MtvHub/passreset" component={PassReset}/>
-    <Route exact path="/MtvHub/error" component={ErrorPage}/>
-    <Route exact path="/MtvHub/genre/:query/:name/:type" component={Genre}/>
-    <Route exact path="/MtvHub/search/:query" component={SearchPage}/>
-    <Route exact path="/MtvHub/Person/:id" component={Person}/>
-    <Route exact path="/MtvHub/tvep/:id/:s" component={TvEp}/>
-    <Route exact path="/MtvHub/ep/:id/:s/:ep" component={Epdetail}/>
+    <Route exact path="/" component={Home}/>
+    <Route exact path="/movie/:id" component={Movie}/>
+    <Route exact path="/tv/:id" component={Tv}/>
+    <Route exact path="/about" component={About}/>
+    <Route exact path="/contact" component={Contact}/>
+    <Route exact path="/watch" component={Watch}/>
+    <Route exact path="/auth" component={Auth}/>
+    <Route exact path="/passreset" component={PassReset}/>
+    <Route exact path="/error" component={ErrorPage}/>
+    <Route exact path="/genre/:query/:name/:type" component={Genre}/>
+    <Route exact path="/search/:query" component={SearchPage}/>
+    <Route exact path="/Person/:id" component={Person}/>
+    <Route exact path="/tvep/:id/:s" component={TvEp}/>
+    <Route exact path="/ep/:id/:s/:ep" component={Epdetail}/>
     <Switch/>
     </>
     )
