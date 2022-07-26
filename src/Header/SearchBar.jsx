@@ -26,7 +26,7 @@ const SearchBar =()=>{
       RES.response.results?RES.response.results.map((item)=>{
       const path=protocol+url+item.backdrop_path;
      return (
-    <NavLink className="text-decoration-none" onClick={()=>setState("")}to={`/MtvHub/${item.media_type}/${item.id}`} key={item.id}>
+    <NavLink className="text-decoration-none" onClick={()=>setState("")}to={`/${item.media_type}/${item.id}`} key={item.id}>
      <li className="mt-2 p-2">
       <img src={path} alt="poster" className="search-img me-1" />
       <span className="text-warning fs-2">{item.title}</span>
