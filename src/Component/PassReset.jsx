@@ -29,7 +29,7 @@ sendPasswordResetEmail(auth, state.email)
     setLoading(false)
     // Password reset email sent!
     // ..
-    history.push("/MtvHub/auth")
+    history.push("/auth")
     window.alert("welcome please sigin to continue")
 
   })

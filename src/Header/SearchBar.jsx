@@ -12,7 +12,7 @@ const SearchBar =()=>{
   const history=useHistory()
   const HandleSubmit=(e)=>{
     e.preventDefault()
-    history.push(`/MtvHub/search/${State}`)
+    history.push(`/search/${State}`)
     setState("")
   }
   const protocol="https://"

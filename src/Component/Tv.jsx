@@ -11,10 +11,10 @@ const Tv=()=>{
   const path=Data.response?`https://image.tmdb.org/t/p/original/${Data.response.backdrop_path}`:null;
   const Tvdetail=(e)=>{
     console.log(e)
-    history.push(`/MtvHub/tvep/${id}/${e.season_number}`)
+    history.push(`/tvep/${id}/${e.season_number}`)
   }
   const EpDetail=(e)=>{
-    history.push(`/MtvHub/ep/${id}/${e.season_number}/${e.episode_number}`)
+    history.push(`/ep/${id}/${e.season_number}/${e.episode_number}`)
   }
   
   return(

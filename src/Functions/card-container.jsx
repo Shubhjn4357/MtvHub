@@ -11,7 +11,7 @@ const poster=e.backdrop_path?e.backdrop_path:e.profile_path;
    return(
    <div className="card bg-dark my-2" key={k}>
     <div className="card-body">
-         <NavLink className="text-decoration-none" to={`/MtvHub/${e.media_type?e.media_type:e.type}/${e.id}`}>
+         <NavLink className="text-decoration-none" to={`/${e.media_type?e.media_type:e.type}/${e.id}`}>
      <div className="row">
 
      <div className="col-4">

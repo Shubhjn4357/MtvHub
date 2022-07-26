@@ -70,7 +70,7 @@ const Footer=()=>{
   </div>
 
   <div className="text-center text-light p-3" style={{"backgroundColor": "rgba(0, 0, 0, 0.2)"}}>
-    © 2020 Copyright:
+    © {new Date().getFullYear()} Copyright:
     <NavLink className="text-light text-decoration-none" to="/">Movie Hub</NavLink>
   </div>
 

@@ -9,7 +9,7 @@ const TvEp=()=>{
   const Data=useCustomFetch(`https://api.themoviedb.org/3/tv/${id}/season/${s}?api_key=b8b691424543ca1b78129c0328e1cc4f&language=en-US`,{})
   const path=Data.response?`https://image.tmdb.org/t/p/original/${Data.response.poster_path}`:null;
   const EpDetail=(e)=>{
-    history.push(`/MtvHub/ep/${id}/${e.season_number}/${e.episode_number}`)
+    history.push(`/ep/${id}/${e.season_number}/${e.episode_number}`)
   }
   return(
   <>
