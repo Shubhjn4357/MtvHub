@@ -7,13 +7,13 @@ const UseCustomFetch=(url,options)=>{
   
   const [response,DisRes]=useReducer(Reducer,null)
   const [isLoading, setIsLoading]=useReducer(Reducer,false)
-  const repeat=options.repeat?options.repeat:null;
   useEffect(()=>{
+    const {repeat,method}=options;
     const fetchData = async () => {
       
       setIsLoading({type:"User",payload:true})
       try {
-        const res = await fetch(url,options.method);
+        const res = await fetch(url,method);
       
         const json = await res.json();
         DisRes({type:"User",payload:json})
@@ -25,11 +25,14 @@ const UseCustomFetch=(url,options)=>{
       }
     }
     fetchData();
+    if(repeat){
+      fetchData();
+    }
    return () => {
       DisRes({type:"User",payload:null})
       setIsLoading({type:"User",payload:false})
     }
-  },[repeat]);
+  },[url]);
   return { response, isLoading };
 };
 export default UseCustomFetch;
