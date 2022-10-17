@@ -1,0 +1,24 @@
+.icons{
+ display:flex;
+ justify-content: space-around;
+ align-items: center;
+}
+.ics{
+ display:flex;
+ align-items: center;
+ justify-content: center;
+ box-shadow:2px 2px 10px #42445A,
+           -2px -2px 10px #999BB5,
+           -2px -2px 10px #42445A,
+           2px 2px 10px #999BB5;
+ border-radius:50%;
+}
+.icon{
+  margin:2rem;
+  display:flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction:column;
+  text-align:center;
+  line-height: 2rem;
+}
